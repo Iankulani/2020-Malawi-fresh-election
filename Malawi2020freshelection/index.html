@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malawi Electoral Commission</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        input { margin-bottom: 10px; }
+        .result { margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Malawi Electoral Commission</h1>
+    <div id="form">
+        <label>Total Published Centers: <input type="number" id="totalPublishedCenters"></label><br>
+        <label>Total Registered Voters/Turnout: <input type="number" id="totalRegisteredVotes"></label><br>
+        <label>Total Votes Cast/Total Votes: <input type="number" id="totalVotesCast"></label><br>
+        <label>Total Null & Void Votes/Invalid Votes: <input type="number" id="nullAndVoid"></label><br>
+        <label>Total Valid Votes: <input type="number" id="totalValidVotes"></label><br>
+        <label>Total Valid Votes for Dr Lazarus Chakwera: <input type="number" id="chakweraVotes"></label><br>
+        <label>Total Valid Votes for Peter Kuwani: <input type="number" id="kuwaniVotes"></label><br>
+        <label>Total Valid Votes for Professor Muthalika: <input type="number" id="muthalikaVotes"></label><br>
+        <button id="calculate">Calculate</button>
+    </div>
+    <div id="results" class="result"></div>
+    <script src="renderer.js"></script>
+</body>
+</html>
